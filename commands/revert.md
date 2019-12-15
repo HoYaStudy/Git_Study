@@ -13,7 +13,7 @@ Create new commit that undoes all of the changes made in \<commit\>, then apply 
 #### `git revert -m parent-number <commit>`
 #### `git revert --mainline parent-number <commit>`
 
-* `-m` : Merged commit을 revert 한다.
+* `-m` : Merged commit을 revert 할 때, 어느 쪽을 mainline으로 할 지 결정한다.
 
 > Ex) $ git revert -m1 \<commit>
 
