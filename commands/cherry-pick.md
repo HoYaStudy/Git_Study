@@ -27,11 +27,11 @@ Apply the changes introduced by some existing commits.
 
 * `-m` : Merged commit을 cherry-pick 할 때, 어느 쪽을 mainline으로 할 지 결정한다.
 
-> Ex) $ git revert -m1 \<commit>
+> Ex) $ git cherry-pick -m1 \<commit>
 
 Merge를 해온 commit의 내용을 cherry-pick 한다.
 
-> Ex) $ git revert -m2 \<commit>
+> Ex) $ git cherry-pick -m2 \<commit>
 
 Merge가 된 commit의 내용을 cherry-pick 한다.
 
