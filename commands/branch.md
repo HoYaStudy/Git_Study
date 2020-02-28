@@ -29,6 +29,29 @@ Branch 목록을 보여준다. `*` 표시가 붙은 branch가 현재 checkout되
 
 ---
 
+#### `$ git branch -d <branch>`
+#### `$ git branch --delete <branch>`
+
+-d option을 추가하면 merge된 branch를 삭제한다.
+
+---
+
+#### `$ git branch -D <branch>`
+
+-D option을 추가하면 merge되지 않은 branch를 강제로 삭제한다.
+
+---
+
+#### `$ git branch -m [<old_branch>] <new_branch>`
+#### `$ git branch --move [<old_branch>] <new_branch>`
+#### `$ git branch -M [<old_branch>] <new_branch>`
+
+Move/Rename a branch and the corresponding reflog.
+
+`-M` is same as `--move --force`.
+
+---
+
 #### `$ git branch -a`
 #### `$ git branch --all`
 
@@ -65,19 +88,6 @@ Branch 목록을 보여준다. `*` 표시가 붙은 branch가 현재 checkout되
 #### `$ git branch --no-merged`
 
 --no-merged option을 추가하면 아직 merge되지 않은 branch를 보여준다. -d option으로 삭제되지 않는다.
-
----
-
-#### `$ git branch -d <branch>`
-#### `$ git branch --delete <branch>`
-
--d option을 추가하면 merge된 branch를 삭제한다.
-
----
-
-#### `$ git branch -D <branch>`
-
--D option을 추가하면 merge되지 않은 branch를 강제로 삭제한다.
 
 ---
 
